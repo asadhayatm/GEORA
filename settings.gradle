@@ -1,0 +1,1 @@
+include ':app', ':imagecropper', ':amazons3library', ':duo-navigation-drawer'

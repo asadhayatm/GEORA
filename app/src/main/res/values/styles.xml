@@ -1,0 +1,173 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+
+    </style>
+
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar"></style>
+
+    <declare-styleable name="TextView">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@android:color/transparent</item>
+        <item name="android:bottomDark">@android:color/transparent</item>
+        <item name="android:bottomMedium">@android:color/transparent</item>
+        <item name="android:centerBright">@android:color/transparent</item>
+        <item name="android:centerDark">@android:color/transparent</item>
+        <item name="android:centerMedium">@android:color/transparent</item>
+        <item name="android:fullBright">@android:color/transparent</item>
+        <item name="android:fullDark">@android:color/transparent</item>
+        <item name="android:topBright">@android:color/transparent</item>
+        <item name="android:topDark">@android:color/transparent</item>
+    </style>
+
+    <style name="signup">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">1</item>
+
+    </style>
+
+    <style name="signup_multi">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/exit_to_bottom</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="AppTheme">
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/White</item>
+        <item name="android:textColorSecondary">@color/white__30</item>
+    </style>
+
+    <!--custom dialog style-->
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:theme">@style/AppTheme</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- <item name="android:windowAnimationStyle">@style/DialogBottomAnimation</item>-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/white_hint</item>
+        <item name="colorControlActivated">@color/butterscotch</item>
+    </style>
+
+
+    <style name="TabLayoutTheme" parent="android:Widget">
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabTextColor">@color/warm_grey</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+        <!--<item name="android:background">@drawable/shape_rectangle_blue_gradient_fill</item>-->
+        <!--<item name="tabTextAppearance">@style/AppTheme.TextAppearance.Design.Tab</item>-->
+    </style>
+
+    <style name="semibold_test_13_black_back_yellow_oval_padding_10">
+        <item name="android:fontFamily">@font/sfuidisplaysemibold</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:layout_margin">@dimen/_20sdp</item>
+        <item name="android:background">@drawable/yellow_oval</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="semibold_test_13_yello_back_yellow_border_round_rect_padding_10">
+        <item name="android:fontFamily">@font/sfuidisplaysemibold</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:background">@drawable/yellow_border_round_rect</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:layout_margin">@dimen/_20sdp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="regular_test_10_white__40_padding_5">
+        <item name="android:fontFamily">@font/sfuidisplayregular</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/white__40</item>
+    </style>
+
+    <style name="semibold_text_13_viridian_padding_5">
+        <item name="android:fontFamily">@font/sfuidisplaysemibold</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/viridian</item>
+    </style>
+    <style name="semibold_text_11_viridian_padding_5">
+        <item name="android:fontFamily">@font/sfuidisplaysemibold</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/viridian</item>
+    </style>
+    <style name="regular_text_9_orangey_red_padding_5">
+        <item name="android:fontFamily">@font/sfuidisplayregular</item>
+        <item name="android:textSize">@dimen/_9ssp</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/orangey_red</item>
+    </style>
+    <style name="regular_text_8_orangey_red_padding_5">
+        <item name="android:fontFamily">@font/sfuidisplayregular</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="android:textColor">@color/orangey_red</item>
+    </style>
+
+    <!--textView Edittext background-->
+
+    <style name="regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10">
+        <item name="android:fontFamily">@font/sfuidisplayregular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:layout_marginTop">@dimen/_10sdp</item>
+        <item name="android:layout_marginStart">@dimen/_10sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_10sdp</item>
+        <item name="android:background">@drawable/black_rect_cor_round_blacl_two</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/white_hint</item>
+    </style>
+
+    <style name="simpletooltip_default" parent="@android:style/TextAppearance.Medium"></style>
+
+</resources>

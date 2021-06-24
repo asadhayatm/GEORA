@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <nl.psdcompany.duonavigationdrawer.views.DuoMenuView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:tag="@string/tag_menu"
+        app:footer="@layout/duo_view_footer"
+        app:header="@layout/duo_view_header">
+
+    </nl.psdcompany.duonavigationdrawer.views.DuoMenuView>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_13ssp" />
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ic_left_panel"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_black_map_pin" />
+
+        <ImageView
+
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/ic_right_panel"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_black_list_view" />
+
+    </RelativeLayout>
+
+
+</nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_15sdp"
+    app:cardElevation="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_rect_cor_round_blacl_two">
+
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_radio_btn_selected" />
+
+        <TextView
+            android:id="@+id/tv_card_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_selected"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:padding="@dimen/_5sdp"
+            android:text="****    ****    ****    5824"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_13ssp" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_options" />
+
+        <TextView
+            android:id="@+id/tv_exp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_card_no"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/iv_selected"
+            android:fontFamily="@font/sfuidisplaylight"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/expires_on"
+            android:textColor="@color/warm_grey"
+            android:textSize="@dimen/_9ssp" />
+
+        <TextView
+            android:id="@+id/tv_exp_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_exp_text"
+            android:layout_toRightOf="@+id/iv_selected"
+            android:fontFamily="@font/sfuidisplaylight"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:text="07/21"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tv_set_as_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_exp_date"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/iv_selected"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/selected_as_default"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_exp_text"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

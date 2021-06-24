@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.addcard.AddCardActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_with_left_n_title" />
+
+    <TextView
+        android:id="@+id/tv_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:drawableLeft="@drawable/ic_card_details"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:text="@string/card_details"
+        android:textColor="@color/white__30"
+        android:textSize="@dimen/_13ssp" />
+
+    <EditText
+        android:id="@+id/et_card_no"
+        style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/tv_details"
+        android:hint="@string/card_number"
+        android:inputType="number"
+        android:maxLength="16" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_card_no"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/et_expiry_date"
+            style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_weight=".7"
+            android:hint="@string/expires_on"
+            android:inputType="textCapWords"
+            android:maxLength="50" />
+
+        <EditText
+            android:id="@+id/et_cvv"
+            style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3"
+            android:hint="@string/cvv"
+            android:inputType="number"
+            android:maxLength="4" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/ll"
+        android:hint="@string/cardholder_name"
+        android:inputType="textCapWords"
+        android:maxLength="100" />
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_check_selected"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_name"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toEndOf="@id/iv_check"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/save_this_card_for_future_transactions"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_add_card"
+        style="@style/semibold_test_13_black_back_yellow_oval_padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/add_card" />
+
+</RelativeLayout>

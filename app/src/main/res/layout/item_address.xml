@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_15sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_rect_cor_round"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/iv_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_radio_btn_selected" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_options" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_toStartOf="@+id/iv_more"
+            android:layout_toEndOf="@+id/iv_selected"
+            android:fontFamily="@font/sfuidisplaysemibold"
+            android:maxLines="1"
+            android:padding="@dimen/_5sdp"
+            android:text="Shaifali"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/iv_selected"
+            android:background="@drawable/black_rect_cor_round_black_"
+            android:fontFamily="@font/sfuidisplaylight"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_1sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_1sdp"
+            android:text="Home"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_9ssp" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_category"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/iv_selected"
+            android:drawableStart="@drawable/ic_pin_my_addresses"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="@string/_114b_12th_avenue_street_one_hudson_yards_ny_new_york_12534"
+            android:textColor="@color/warm_grey"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_location"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_toEndOf="@+id/iv_selected"
+            android:drawableStart="@drawable/ic_phone_my_addresses"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:text="+1 (860) 283-1343"
+            android:textColor="@color/warm_grey"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tv_set_as_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mobile"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_toRightOf="@+id/iv_selected"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="@string/selected_as_default"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_11ssp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_deliver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mobile"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/yellow_oval"
+            android:fontFamily="@font/sfuidisplaysemibold"
+            android:padding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/deliver_here"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9ssp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

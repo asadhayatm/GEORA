@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/black_two_">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_back_btn" />
+
+    <TextView
+        android:id="@+id/tv_select_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_close"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/select_country"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_14ssp" />
+
+    <EditText
+        android:textColor="@color/White"
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_below="@+id/tv_select_category"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:hint="@string/select_country"
+        android:padding="@dimen/_5sdp"
+        android:textColorHint="@color/white_20"
+        android:textSize="@dimen/_12ssp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_country_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_search"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="visible"></androidx.recyclerview.widget.RecyclerView>
+    <!--
+        <TextView
+            android:id="@+id/tv_no_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_search"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/avenir__black"
+            android:gravity="center"
+            android:text="@string/no_such_country"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_13ssp" />-->
+
+
+</RelativeLayout>

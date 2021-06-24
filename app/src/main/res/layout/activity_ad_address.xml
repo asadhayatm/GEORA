@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.addaddress.AddAddressActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_with_left_n_title" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+
+                android:paddingBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/tv_address_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_pin"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:fontFamily="@font/sfuidisplaysemibold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/address_details"
+                    android:textColor="@color/white__30"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:id="@+id/tv_current_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/ic_target"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:fontFamily="@font/sfuidisplaysemibold"
+                    android:padding="@dimen/_10sdp"
+                    android:text="Use current location"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_11ssp" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_address_"
+                    android:hint="@string/location" />
+
+                <EditText
+                    android:id="@+id/tv_building"
+                    style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_address"
+                    android:gravity="center_vertical"
+                    android:hint="@string/flat_no_building_name" />
+
+                <EditText
+                    android:id="@+id/tv_state"
+                    style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_building"
+                    android:gravity="center_vertical"
+                    android:hint="@string/state_name"
+                    android:inputType="textCapWords" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_state"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <EditText
+                        android:id="@+id/et_city"
+                        style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:hint="@string/city"
+                        android:inputType="textCapWords" />
+
+                    <EditText
+                        android:id="@+id/et_pincode"
+                        style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:hint="@string/pin_code"
+                        android:inputType="number" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_contact_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_address"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_mobile_no"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/contact_details"
+                android:textColor="@color/white__30"
+                android:textSize="@dimen/_13ssp" />
+
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@+id/tv_contact_details"
+                android:gravity="center_vertical"
+                android:hint="@string/full_name"
+                android:inputType="textCapWords" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_name">
+
+                <TextView
+                    android:id="@+id/tv_cc"
+                    style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:text="+1" />
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    style="@style/regular_test_12_white_back_black_rect_cor_round_blacl_two_padding_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_cc"
+                    android:hint="@string/mobile_number"
+                    android:inputType="number"
+                    android:maxLength="20" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_addres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_mobile"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic__address"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:padding="@dimen/_10sdp"
+                android:text="@string/type_of_address"
+                android:textColor="@color/white__30"
+                android:textSize="@dimen/_13ssp" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_addres"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="true"
+                    android:fontFamily="@font/sfuidisplayregular"
+                    android:text="Home"
+                    android:textColor="@color/White" />
+
+                <RadioButton
+                    android:id="@+id/rb_work"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="false"
+                    android:fontFamily="@font/sfuidisplayregular"
+                    android:text="Work"
+                    android:textColor="@color/White" />
+
+                <RadioButton
+                    android:id="@+id/rb_other"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="false"
+                    android:fontFamily="@font/sfuidisplayregular"
+                    android:text="Other"
+                    android:textColor="@color/White" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_save_address"
+                style="@style/semibold_test_13_black_back_yellow_oval_padding_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg"
+                android:gravity="center"
+                android:text="@string/save_address" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/fl_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</RelativeLayout>

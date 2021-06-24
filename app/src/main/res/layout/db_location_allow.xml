@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/black_rect_cor_round_blacl_two">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_location_graphic" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_image"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:gravity="center"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/allow_geora_to_access_your_location_while_you_use_the_app"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:gravity="center"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/your_current_location_will_be_used_for_directions_and_estimated_travel_times"
+        android:textColor="@color/white__40"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_des"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/don_t_allow"
+        android:textColor="@color/white__40"
+        android:textSize="@dimen/_14ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_des"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/allow"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_14ssp" />
+
+</RelativeLayout>

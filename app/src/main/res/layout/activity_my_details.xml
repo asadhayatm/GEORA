@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:id="@+id/ll_main"
+    android:focusable="true"
+    android:clickable="true"
+    tools:context=".ui.DetailsActivity.MyDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar_details"
+        layout="@layout/toolbar_with_left_n_title" />
+
+    <FrameLayout
+        android:id="@+id/fl_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_details">
+    </FrameLayout>
+
+</LinearLayout>

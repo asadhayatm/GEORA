@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+
+    android:focusable="true"
+    android:clickable="true"
+    tools:context=".ui.home.detailpage.RSVPFormFragment">
+
+    <include layout="@layout/toolbar_with_left_n_title"
+        android:id="@+id/toolbar"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rl_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_submit"
+        android:layout_below="@+id/toolbar"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/semibold_test_13_black_back_yellow_oval_padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/submit" />
+
+</RelativeLayout>

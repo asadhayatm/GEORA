@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "711509940476",
+    "firebase_url": "https://fine-physics-229022.firebaseio.com",
+    "project_id": "fine-physics-229022",
+    "storage_bucket": "fine-physics-229022.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711509940476:android:3c77e2e637ef36a7865f79",
+        "android_client_info": {
+          "package_name": "com.geora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711509940476-8bsnuqjlqudve5qgu51450ba1p10l1ij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geora",
+            "certificate_hash": "f4706b390d613b2735d2d2f0f8e695699a3210fd"
+          }
+        },
+        {
+          "client_id": "711509940476-bb8mqicjd0er87evlorf9m668n2tre3j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geora",
+            "certificate_hash": "a41703893191b39bd8e6f5e43f4355ac120bd06d"
+          }
+        },
+        {
+          "client_id": "711509940476-gfpvp741rb9pgl5emeg15vfigmbh1o1s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geora",
+            "certificate_hash": "e0dd83b9a9c454d09d0f852c835cbde9d2d16afe"
+          }
+        },
+        {
+          "client_id": "711509940476-gols83i5uijh6en8op8ut6jvoq4mv3g2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_rEQtGt7JFUOEsdQ5CDdS9zEnIYwm3J0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711509940476-gols83i5uijh6en8op8ut6jvoq4mv3g2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:background="@drawable/black_rect_cor_round"
+            android:paddingStart="@dimen/_11sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_11sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_80sdp"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                tools:text="Nike Mercurials " />
+
+            <TextView
+                android:id="@+id/tv_order_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_order_name"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:textColor="@color/white_40"
+                android:textSize="@dimen/_9ssp"
+                android:text="Size: " />
+
+            <TextView
+                android:id="@+id/tv_order_size_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_order_name"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/tv_order_size"
+                android:layout_marginEnd="@dimen/_80sdp"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:textColor="@color/white_40"
+                android:textSize="@dimen/_9ssp"
+                tools:text="White color" />
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_order_size"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:text="@string/quantity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/tv_quantity_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_quantity"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_80sdp"
+                android:layout_toEndOf="@id/tv_quantity"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:text=" 1"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/tv_order_no"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_quantity"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:text="@string/order_no"
+                android:textColor="@color/white_40"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/tv_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tv_quantity"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:text="@string/color"/>
+
+            <ImageView
+                android:id="@+id/iv_color_image"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tv_color"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/rounded_square_colors"
+                android:src="@color/warm_grey"/>
+
+            <TextView
+                android:id="@+id/tv_placed_on"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_order_no"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="@string/placed_on"
+                android:textColor="@color/white_40"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_placed_on"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="@string/order_status"
+                android:textColor="@color/white_40"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/tv_delivered_on"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_order_status"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="@string/delivered_on"
+                android:visibility="gone"
+                android:textColor="@color/white_40"
+                android:textSize="@dimen/_9ssp" />
+
+
+            <TextView
+                android:id="@+id/tv_order_no_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_quantity"
+                android:layout_alignBaseline="@+id/tv_order_no"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_toEndOf="@id/tv_order_no"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:maxLines="1"
+                android:text="5449378503 - 547FG85730"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/tv_placed_on_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_order_no_data"
+                android:layout_alignBaseline="@id/tv_placed_on"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_toEndOf="@id/tv_placed_on"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:text="21st Dec 2018"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/tv_order_status_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_placed_on_data"
+                android:layout_alignBaseline="@+id/tv_order_status"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_toEndOf="@id/tv_order_status"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp"
+                tools:text="Pending" />
+            <TextView
+                android:id="@+id/tv_delivered_on_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_placed_on_data"
+                android:layout_alignBaseline="@+id/tv_delivered_on"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_toEndOf="@id/tv_delivered_on"
+                android:fontFamily="@font/sfuidisplaylight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp"
+                android:visibility="gone"
+                tools:text="21st Dec 2018" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_order_image"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:src="@drawable/placeholder_medium"
+            app:layout_constraintRight_toRightOf="@id/rl_order_details"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:background="@drawable/black_rect_cor_round"
+            android:paddingStart="@dimen/_11sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_11sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rl_order_details">
+
+            <TextView
+                android:id="@+id/tv_price_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:text="@string/price_details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_price_detail"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/sfuidisplayregular"
+                android:text="@string/total_price"
+                android:textColor="@color/white__40"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tv_discount_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_total_price"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/sfuidisplayregular"
+                android:text="@string/discount_price"
+                android:textColor="@color/white__40"
+                android:textSize="@dimen/_10ssp" />
+
+
+            <TextView
+                android:id="@+id/tv_paid_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_discount_price"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:maxLines="1"
+                android:text="@string/paid_amount"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tv_total_price_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_total_price"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_toEndOf="@id/tv_total_price"
+                android:fontFamily="@font/sfuidisplayregular"
+                android:text="$45"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:id="@+id/tv_discount_price_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_discount_price"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_toEndOf="@id/tv_total_price"
+                android:fontFamily="@font/sfuidisplayregular"
+                android:text="$45"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp" />
+
+
+            <TextView
+                android:id="@+id/tv_paid_amount_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/tv_paid_amount"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_toEndOf="@+id/tv_paid_amount"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:text="$50"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/viridian"
+                android:textSize="@dimen/_13ssp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_address_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/black_rect_cor_round"
+            android:paddingStart="@dimen/_11sdp"
+            android:paddingTop="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_11sdp"
+            android:paddingBottom="@dimen/_15sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl_layout_2">
+
+
+            <TextView
+                android:id="@+id/tv_address_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:text="@string/address_details"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_person_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_address_details"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/sfuidisplayregular"
+                android:text="Camilla Vasquez"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/tv_address_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_person_name"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/drawable_rect_circular_greyish_brown"
+                android:fontFamily="@font/sfuidisplayregular"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:text="Home"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_address_type"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <ImageView
+                    android:id="@+id/iv_location_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_my_location" />
+
+                <TextView
+                    android:id="@+id/tv_address_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toEndOf="@id/iv_location_icon"
+                    android:fontFamily="@font/sfuidisplayregular"
+                    android:text="114B, 12th Avenue street, one hudson yards,NY, New york 12534"
+                    android:textColor="@color/white__40"
+                    android:textSize="@dimen/_9ssp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_address"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:drawableStart="@drawable/ic_phone_my_addresses"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/sfuidisplayregular"
+                android:text="+1 (860) 283-1343"
+                android:textColor="@color/white__40"
+                android:textSize="@dimen/_9ssp" />
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

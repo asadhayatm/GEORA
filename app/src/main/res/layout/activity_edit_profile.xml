@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/black"
+    tools:context=".ui.editprofile.EditProfileActivity">
+
+    <include layout="@layout/toolbar_with_left_n_title"
+        android:id="@+id/toolbar"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/ic_placeholder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <ProgressBar
+        android:layout_width="@dimen/_20sdp"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_user_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_user_image"
+        app:layout_constraintStart_toStartOf="@id/iv_user_image"
+        app:layout_constraintTop_toTopOf="@id/iv_user_image" />
+
+        <ImageView
+            android:id="@+id/iv_edit_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellow_oval"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="@id/iv_user_image"
+            app:layout_constraintEnd_toEndOf="@id/iv_user_image" />
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableStart="@drawable/ic_profile"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:padding="@dimen/_10sdp"
+        tools:text="Saloni"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_13ssp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/iv_user_image" />
+    <TextView
+        android:id="@+id/tv_user_email_id"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableStart="@drawable/ic_mail"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:padding="@dimen/_10sdp"
+        tools:text="Saloni@gmail.con"
+        android:textColor="@color/warm_grey"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/et_user_name" />
+    <ImageView
+        android:id="@+id/iv_not_verified"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:src="@drawable/ic_not_verified"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_user_email_id"
+        app:layout_constraintBottom_toBottomOf="@id/tv_user_email_id" />
+    <TextView
+        android:id="@+id/tv_cc"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:padding="@dimen/_10sdp"
+        android:text="+1"
+        android:drawableStart="@drawable/ic_mobile_no"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_email_id"/>
+
+    <EditText
+        android:id="@+id/et_mobile_number"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:padding="@dimen/_10sdp"
+        tools:text="Saloni"
+        android:textColor="@color/White"
+        android:inputType="number"
+        android:maxLength="15"
+        android:imeOptions="actionNext"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/tv_cc"
+        app:layout_constraintTop_toBottomOf="@id/tv_user_email_id" />
+
+    <TextView
+        android:id="@+id/tv_dob"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableStart="@drawable/ic_date_of_birth"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:padding="@dimen/_10sdp"
+        tools:text="Saloni"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toStartOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/et_mobile_number" />
+    <ImageView
+        android:id="@+id/iv_open_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:src="@drawable/ic_open_calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_dob"
+        app:layout_constraintBottom_toBottomOf="@id/tv_dob" />
+
+    <TextView
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_oval"
+        android:fontFamily="@font/sfuidisplaybold"
+        android:gravity="center"
+        style="@style/semibold_test_13_black_back_yellow_oval_padding_10"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dob" />
+
+    <FrameLayout
+        android:id="@+id/fl_add_address"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/_10sdp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/_10sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

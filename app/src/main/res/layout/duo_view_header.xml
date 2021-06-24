@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_two_">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_50sdp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile_pic"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_profile_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/tv_view_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/sfuidisplaysemibold"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/view_profile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_11sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_view_profile"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/iv_my_activity"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/tv_home"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@color/colorPrimary"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_go"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/tv_my_activity"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@color/colorPrimary"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_about"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/tv_go_premium"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@color/colorPrimary"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_settings"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/tv_about"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:src="@color/colorPrimary"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/side_menu_selected"
+                android:drawableStart="@drawable/ic_home_selected"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/home"
+                android:textColor="@color/White"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_my_activity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/tv_home"
+                android:drawableStart="@drawable/ic_activities_unselected"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/my_activities"
+                android:textColor="@color/warm_grey"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_go_premium"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/tv_my_activity"
+                android:drawableStart="@drawable/ic_go_premium"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/go_premium"
+                android:textColor="@color/warm_grey"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/tv_go_premium"
+                android:drawableStart="@drawable/ic_about_unselected"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/about"
+                android:textColor="@color/warm_grey"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_settings"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/tv_about"
+                android:drawableStart="@drawable/ic_settings_unselected"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/sfuidisplaysemibold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/settings"
+                android:textColor="@color/warm_grey"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_become_busniss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_settings"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:drawableEnd="@drawable/ic_side_arrow"
+                android:drawablePadding="@dimen/_10sdp"
+                android:fontFamily="@font/sfuidisplayregular"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/become_a_business_user"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_11ssp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+</RelativeLayout>

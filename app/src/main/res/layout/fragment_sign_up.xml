@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black_two"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:text="@string/sign_up_"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_user_image"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/ic_placeholder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_back" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/iv_user_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_user_image"
+        app:layout_constraintStart_toStartOf="@id/iv_user_image"
+        app:layout_constraintTop_toTopOf="@id/iv_user_image" />
+
+    <ImageView
+        android:id="@+id/iv_edit_iamge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_oval"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@id/iv_user_image"
+        app:layout_constraintEnd_toEndOf="@id/iv_user_image" />
+
+
+    <EditText
+        android:id="@+id/et_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableStart="@drawable/ic_profile"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:hint="@string/full_name"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords"
+        android:maxLength="50"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/White"
+        android:textColorHint="@color/white_20"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_user_image" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/White"
+        android:textColorHint="@color/white_20"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_fullname" />
+
+    <RelativeLayout
+        android:id="@+id/rl_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_email">
+
+        <TextView
+            android:id="@+id/tv_cc"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_20ssp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/black_rect_cor_round"
+            android:drawableStart="@drawable/ic_mobile_no"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:padding="@dimen/_10sdp"
+            android:text="+1"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:id="@+id/et_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_toRightOf="@+id/tv_cc"
+            android:background="@drawable/black_rect_cor_round"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:hint="@string/mobile_number"
+            android:inputType="number"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/White"
+            android:textColorHint="@color/white_20"
+            android:textSize="@dimen/_13ssp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableStart="@drawable/ic_date_of_birth"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:gravity="center_vertical"
+        android:hint="@string/date_of_birth"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/White"
+        android:textColorHint="@color/white_20"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_mobile" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:src="@drawable/ic_open_calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_mobile" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="50"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/White"
+        android:textColorHint="@color/white_20"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_date" />
+
+    <ImageView
+        android:id="@+id/iv_eye"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_eye_unselected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_date" />
+
+
+    <TextView
+        android:id="@+id/tv_submit"
+        style="@style/semibold_test_13_black_back_yellow_oval_padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <com.yuyakaido.android.cardstackview.CardStackView
+        android:id="@+id/card_stack_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_events"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        app:stackFromEnd="true"></com.yuyakaido.android.cardstackview.CardStackView>
+
+    <TextView
+        android:id="@+id/tv_recall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:text="@string/recall"
+        android:textColor="@color/white__40"
+        android:textSize="@dimen/_10ssp" />
+
+    <ImageView
+        android:id="@+id/iv_recall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_recall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:elevation="@dimen/_2sdp"
+        android:src="@drawable/ic_undo" />
+
+    <TextView
+
+        android:id="@+id/tv_events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_promotion"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/yellow_border_round_rect"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/events"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/tv_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_fundraising"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/gary_border_round_rect"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/sales"
+        android:textColor="@color/white__40"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/tv_promotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/gary_border_round_rect"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/promotions"
+        android:textColor="@color/white__40"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/tv_fundraising"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/gary_border_round_rect"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/fundraising"
+        android:textColor="@color/white__40"
+        android:textSize="@dimen/_10ssp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_no_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:src="@drawable/ic_no_offer_browse_graphic" />
+
+        <TextView
+            android:id="@+id/tv_no_offers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sfuidisplaysemibold"
+            android:text="@string/no_offers"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_no_offers"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:gravity="center"
+            android:paddingStart="@dimen/_35sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_35sdp"
+            android:text="@string/seems_like_there_are_no_offers_available_in_this_area_right_now_click_on_map_view_to_see_offers_in_other_places"
+            android:textColor="@color/warm_grey"
+            android:textSize="@dimen/_11ssp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:src="@drawable/left_list"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/right_browse"
+        android:visibility="gone" />
+</RelativeLayout>

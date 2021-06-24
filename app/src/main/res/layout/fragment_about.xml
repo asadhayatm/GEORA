@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/tv_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableStart="@drawable/ic_about"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/s_about_us"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_term_and_condition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableStart="@drawable/ic_tnc"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/s_terms_and_condition"
+        android:textColor="@color/White"
+        android:textColorHint="@color/white_20"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_about_us" />
+
+    <TextView
+        android:id="@+id/tv_privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableStart="@drawable/ic_privacy_policy"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:hint="@string/mobile_number"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/s_privacy_policy"
+        android:textColor="@color/White"
+        android:textColorHint="@color/white_20"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_term_and_condition" />
+
+    <TextView
+        android:id="@+id/tv_share_app"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableStart="@drawable/ic_share"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplaysemibold"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/s_share_app"
+        android:textColor="@color/White"
+        android:textColorHint="@color/white_20"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_privacy_policy" />
+
+
+    <TextView
+        android:id="@+id/tv_rate_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:drawableStart="@drawable/ic_rate_us"
+        android:drawablePadding="@dimen/_10sdp"
+        android:fontFamily="@font/sfuidisplayregular"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/s_rate_us"
+        android:textColor="@color/White"
+        android:textColorHint="@color/white_20"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_share_app" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

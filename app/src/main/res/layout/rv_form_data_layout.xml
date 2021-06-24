@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_key"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/white_40"
+        android:textAlignment="textStart"
+        tools:text="dfasufyausyfiaysfiuyaiusfauisfyu"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_value"
+        android:layout_width="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_toEndOf="@id/tv_key"
+        android:textColor="@color/white"
+        android:textAlignment="viewEnd"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10sdp"
+        tools:text="vaibhavgupta278747283748724392@gmail.com"/>/>
+
+</RelativeLayout>

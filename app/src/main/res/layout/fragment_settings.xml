@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+
+    android:focusable="true"
+    android:clickable="true"
+    tools:context="com.geora.ui.settings.SettingsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_menu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_notifications_yellow"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/sfuidisplaysemibold"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/notifications"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_13ssp" />
+
+        <Switch
+            android:id="@+id/switch_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_diatance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_notification">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_proximity"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/sfuidisplaysemibold"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/select_proximity"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/sfuidisplayregular"
+            android:padding="@dimen/_10sdp"
+            android:text="0 miles"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_10ssp" />
+
+        <SeekBar
+            android:id="@+id/sb_proximity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_distance"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sb_proximity"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/sfuidisplaysemibold"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/s_update"
+            android:textColor="@color/butterscotch"
+            android:textSize="@dimen/_10ssp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/black_rect_cor_round"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_diatance">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_password_lock"
+            android:drawablePadding="@dimen/_10sdp"
+            android:fontFamily="@font/sfuidisplaysemibold"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/change_password"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_signout"
+        style="@style/semibold_test_13_yello_back_yellow_border_round_rect_padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/sign_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_change_password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#F9C21D</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#F9C21D</color>
+    <color name="White">#FFFFFF</color>
+    <color name="bg_gray">#2c2c2c</color>
+    <color name="butterscotch">#F9C21D</color>
+    <color name="black_20">#202020</color>
+    <color name="black20" tools:ignore="MissingDefaultResource">#313131</color>
+    <color name="black_two">#171717</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="black_two_">#171717</color>
+    <color name="white_hint">#636363</color>
+    <color name="warm_grey">#929292</color>
+    <color name="black_three">#333333</color>
+    <color name="white_40">#66ffffff</color>
+    <color name="black">#000</color>
+    <color name="warm_gray_two">#7b7b7b</color>
+    <color name="viridian">#1aa14d</color>
+    <color name="very_light_pink_70">#b3fffefe</color>
+    <color name="white__40">#66ffffff</color>
+    <color name="white__30">#4cffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="orangey_red">#ff3b3b</color>
+    <color name="greyish_brown">#3b3b3b</color>
+    <color name="white_70">#b3ffffff</color>
+
+    <color name="simpletooltip_background">@color/black</color>
+    <color name="simpletooltip_text">@android:color/white</color>
+    <color name="simpletooltip_arrow">@color/black</color>
+
+</resources>

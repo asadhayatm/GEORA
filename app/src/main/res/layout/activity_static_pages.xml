@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".ui.staticpages.StaticPagesActivity">
+
+    <include layout="@layout/toolbar_with_left_n_title" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/black_rect_cor_round">
+
+    </WebView>
+
+</LinearLayout>
